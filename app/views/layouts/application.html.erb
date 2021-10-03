@@ -1,70 +1,69 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <title>Wireman-Ticas</title>
-      
- <link rel="shortcut href="assets/j.png" >
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
-<!--------Fonts Awesome------>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  
-<!-- MDB -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
-  
-<!--------Google Fonts API Connection------>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
-<!--------Raw Font Links  ------>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
-    
-<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&family=Noto+Serif&display=swap" rel="stylesheet">
-  <!----------Rails Stuff------------->
-   
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all',
-                                           'data-turbolinks-track': 'reload' %>
- 
-   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  
-  
-      <!-- DONT FORGET TO INCLUDE SHIM FOR IE -->
-
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5DSFT7K7V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J5DSFT7K7V');
-</script>
-  
-  
-
-
-</head>
-
+<html>
+<title>Wireman-Ticas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
 <body>
 
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="w3-container w3-xlarge w3-padding-24">
+    <a href="#" class="w3-left w3-button w3-white">Wireman Ticas</a>
+    <a href="#about" class="w3-right w3-button w3-white">About</a>
+  </header>
 
 
+   <!-- Photo Grid -->
+  <div class="w3-row">
+    <div class="w3-half">
+      <img src="/assets/art4.png" style="width:100%" >
+      <img src="/assets/art2.png" style="width:100%">
+      <img src="/assets/art3.png" style="width:100%">
+    </div>
+​
+    <div class="w3-half">
+      <img src="/assets/art5.png" style="width:100%">
+      <img src="/assets/art3.png" style="width:100%">
+    <img src="/assets/art3.png" style="width:100%">
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
 
-<%= yield %>
- <%= debug(params) if Rails.env.development? %>
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+  <h2>About</h2>
+  <img src="/assets/bottomphoto.png" class="w3-image w3-padding-32" width="300" height="300">
+  <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <p class="w3-large w3-text-pink">Do not hesitate to contact me!</p>
+    <div class="w3-section">
+      <label><b>Name</b></label>
+      <input class="w3-input w3-border" type="text" required name="Name">
+    </div>
+    <div class="w3-section">
+      <label><b>Email</b></label>
+      <input class="w3-input w3-border" type="text" required name="Email">
+    </div>
+    <div class="w3-section">
+      <label><b>Message</b></label>
+      <input class="w3-input w3-border" required name="Message">
+    </div>
+    <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+  </form>
+  <br>
+  <p>Powered Wireman-ticas</p>
+</footer>
+ 
 </body>
 </html>
+
